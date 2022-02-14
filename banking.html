@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="my-4">
+        <h1 class="text-4xl font-serif text-center text-cyan-500 bg-fuchsia-200">WELCOME TO SUPER HERO <span  class=" text-violet-900 font-semibold">BANK</span> </h1>
+    </header>
+
+    <main >
+        <!-- Balance & Transiction -->
+        <section class="m-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+                <div class="bg-slate-400 p-4">
+                    <h2 class="text-4xl font-serif text-teal-400 ">Balance</h2>
+                    <p class="text-4xl text-indigo-500">$<span id="user-balance">1200</span></p>
+                </div>
+
+                <div class="bg-rose-500 p-4">
+                    <h2 class="text-4xl font-serif text-teal-400 ">Withdrawn Amount</h2>
+                    <p class="text-4xl text-white">$<span id="withdrawn-total">00</span></p>
+                </div>
+
+                <div class="bg-indigo-500 p-4">
+                    <h2 class="text-4xl font-serif text-teal-400">Deposited Amount</h2>
+                    <p class="text-4xl text-white">$<span id="deposit-total">00</span></p>
+                </div> 
+              </div>
+        </section>
+        <!-- Deposit and Withdraw -->
+        <section class="w-3/4 mx-auto">
+            <div class="grid md:grid-cols-2 gap-4 ">
+                <!-- Deposit -->
+                <div class=" p-4 border-2 border-teal-800 rounded-md bg-violet-400">
+                    <h2 class="text-4xl font-serif text-teal-400 text-center">Deposit Amount</h2>
+                    <div  class=" flex flex-col items-center" action="">
+                        <input id="deposit-amount" class="border-teal-800 rounded-md  border-2 block mb-2  w-2/4 p-2" type="text" placeholder="Enter Deposit Amount">
+                        <button id="deposit-btn" class="border-2 rounded-md border-teal-800 p-2 mt-2 bg-lime-200 font-serif font-bold text-red-500">DEPOSIT</button>
+                    </div>
+                </div>
+                <!-- withdraws -->
+                <div class=" p-4 border-2 border-red-400 rounded-md bg-rose-500">
+                    <h2 class="text-4xl font-serif text-teal-400 text-center">Withdraw</h2>
+                    <div  class=" flex flex-col items-center" action="">
+                        <input id="withdraw-amount" class="border-rose-800 rounded-md  border-2 block mb-2  w-2/4 p-2" type="text" placeholder="Enter Amount To Be Withdraw">
+                        <button id="withdraw-btn" class="border-2 border-rose-800 rounded-md p-2 mt-2 bg-lime-200 font-serif font-bold text-red-500">WITHDRAW</button>
+                    </div>
+                </div>
+              </div>
+        </section>
+    </main>
+
+    <script src="./js/banking.js"></script>
+</body>
+</html>

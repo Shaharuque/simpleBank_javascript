@@ -1,0 +1,6 @@
+27-1 to 27-4 was recap of 26 module
+
+27-5 (advanced) Common function to reduce code repeat:
+getInputvalue()function will be used both for deposit and withdraw.
+
+27-7 (advanced) Deposit and withdraw update with one function:
